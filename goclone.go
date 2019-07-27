@@ -67,7 +67,7 @@ func main() {
 			} else {
 				err := os.MkdirAll(clonePath, os.ModePerm)
 				if err != nil {
-					fmt.Printf("Error: %s", err)
+					fmt.Printf("Error! Could not make directory. Probably already exists: %s", err)
 				}
 
 				var doClone string
